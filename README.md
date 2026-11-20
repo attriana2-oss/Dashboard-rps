@@ -116,3 +116,6 @@ Pengujian menunjukkan bahwa fitur-fitur berikut berjalan dengan baik:
 ## Penggunaan AI
 
 AI digunakan sebagai alat bantu belajar dalam pengembangan aplikasi. AI membantu memahami konsep React, Next.js, dan TypeScript, serta membantu menganalisis error dan memberikan saran pengembangan. Seluruh hasil yang diberikan AI tetap diperiksa, disesuaikan, dan diuji kembali oleh pengembang sebelum digunakan.
+
+# Screenshoot Aplikasi
+# Dassboard Utama
