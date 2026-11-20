@@ -119,3 +119,9 @@ AI digunakan sebagai alat bantu belajar dalam pengembangan aplikasi. AI membantu
 
 # Screenshoot Aplikasi
 # Dassboard Utama
+
+## Screenshot Aplikasi
+
+### Dashboard Utama
+
+![Tampilan Dashboard RPS](screenshots/dashboard-utama.png)
