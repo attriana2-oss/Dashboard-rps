@@ -1,0 +1,34 @@
+export type MingguRPS = {
+  minggu: number;
+  topik: string;
+  cpmk: string;
+  metode: string;
+  status: "Selesai" | "Berjalan" | "Belum";
+};
+
+export const mingguRPS: MingguRPS[] = [
+  { minggu: 1, topik: "Pengantar Perkuliahan", cpmk: "CPMK 1", metode: "Ceramah", status: "Selesai" },
+  { minggu: 2, topik: "Konsep Dasar", cpmk: "CPMK 1", metode: "Diskusi", status: "Selesai" },
+  { minggu: 3, topik: "Landasan Teori", cpmk: "CPMK 1", metode: "Diskusi", status: "Selesai" },
+  { minggu: 4, topik: "Analisis Materi", cpmk: "CPMK 2", metode: "Studi Kasus", status: "Selesai" },
+  { minggu: 5, topik: "Penerapan Konsep", cpmk: "CPMK 2", metode: "Praktik", status: "Selesai" },
+  { minggu: 6, topik: "Pengembangan Materi", cpmk: "CPMK 2", metode: "Diskusi", status: "Berjalan" },
+  { minggu: 7, topik: "Evaluasi Materi", cpmk: "CPMK 2", metode: "Presentasi", status: "Belum" },
+  { minggu: 8, topik: "Ujian Tengah Semester", cpmk: "CPMK 2", metode: "Ujian", status: "Belum" },
+  { minggu: 9, topik: "Materi Lanjutan", cpmk: "CPMK 3", metode: "Ceramah", status: "Belum" },
+  { minggu: 10, topik: "Implementasi", cpmk: "CPMK 3", metode: "Praktik", status: "Belum" },
+  { minggu: 11, topik: "Analisis Kasus", cpmk: "CPMK 3", metode: "Studi Kasus", status: "Belum" },
+  { minggu: 12, topik: "Pengembangan Proyek", cpmk: "CPMK 3", metode: "Proyek", status: "Belum" },
+  { minggu: 13, topik: "Presentasi Proyek", cpmk: "CPMK 4", metode: "Presentasi", status: "Belum" },
+  { minggu: 14, topik: "Evaluasi Proyek", cpmk: "CPMK 4", metode: "Diskusi", status: "Belum" },
+  { minggu: 15, topik: "Review Materi", cpmk: "CPMK 4", metode: "Diskusi", status: "Belum" },
+  { minggu: 16, topik: "Ujian Akhir Semester", cpmk: "CPMK 4", metode: "Ujian", status: "Belum" },
+];
+
+export const penilaian = [
+  { komponen: "Partisipasi", bobot: 10, cpmk: "CPMK 1" },
+  { komponen: "Tugas", bobot: 20, cpmk: "CPMK 2" },
+  { komponen: "Praktik / Proyek", bobot: 30, cpmk: "CPMK 3" },
+  { komponen: "UTS", bobot: 20, cpmk: "CPMK 2" },
+  { komponen: "UAS", bobot: 20, cpmk: "CPMK 4" },
+];
