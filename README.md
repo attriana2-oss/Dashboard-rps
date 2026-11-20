@@ -117,11 +117,23 @@ Pengujian menunjukkan bahwa fitur-fitur berikut berjalan dengan baik:
 
 AI digunakan sebagai alat bantu belajar dalam pengembangan aplikasi. AI membantu memahami konsep React, Next.js, dan TypeScript, serta membantu menganalisis error dan memberikan saran pengembangan. Seluruh hasil yang diberikan AI tetap diperiksa, disesuaikan, dan diuji kembali oleh pengembang sebelum digunakan.
 
-# Screenshoot Aplikasi
-# Dassboard Utama
+
 
 ## Screenshot Aplikasi
 
-### Dashboard Utama
 
-![Tampilan Dashboard RPS](screenshots/dashboard-utama.png)
+**1. Dashboard Utama**
+
+![Dashboard Utama](screenshots/dashboard-utama.png)
+
+**2. Screenshot Kedua**
+
+![Screenshot Kedua](screenshots/Screenshot%202026-11-20%20210928.png)
+
+**3. Screenshot Ketiga**
+
+![Screenshot Ketiga](screenshots/Screenshot%202026-11-20%20211008.png)
+
+**4. Screenshot Keempat**
+
+![Screenshot Keempat](screenshots/Screenshot%202026-11-20%20211536.png)
