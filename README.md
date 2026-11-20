@@ -1,73 +1,118 @@
-
 # Dashboard RPS - Sistem Informasi Akademik
 
 ## Deskripsi Proyek
 
-Dashboard RPS adalah aplikasi web yang dibuat untuk membantu menampilkan dan mengelola informasi Rencana Pembelajaran Semester (RPS). Proyek ini dikembangkan sebagai bagian dari tugas Ujian Tengah Semester (UTS) pada mata kuliah terkait pengembangan aplikasi web.
+Dashboard RPS adalah aplikasi web yang digunakan untuk melihat dan mengelola informasi Rencana Pembelajaran Semester (RPS). Aplikasi ini dibuat sebagai tugas Ujian Tengah Semester (UTS) dengan menggunakan teknologi web modern seperti React dan Next.js.
+
+Melalui aplikasi ini, pengguna dapat melihat jadwal pembelajaran setiap minggu, progres perkuliahan, bobot penilaian, serta mencatat realisasi pembelajaran yang telah dilakukan.
 
 ## Teknologi yang Digunakan
+- HTML5 untuk membuat struktur halaman.
+- CSS3 untuk mengatur tampilan dan desain aplikasi.
+- JavaScript untuk menjalankan fungsi dan interaksi.
+- TypeScript untuk membantu penulisan kode yang lebih terstruktur.
+- React 19 untuk membuat komponen antarmuka pengguna.
+- Next.js 15 App Router sebagai framework aplikasi.
+- LocalStorage untuk menyimpan data di browser.
+- JSON sebagai sumber data simulasi.
+- Visualisasi bobot penilaian dibuat menggunakan CSS tanpa Recharts.
 
+## Fitur Utama
+- Dashboard dengan ringkasan informasi pembelajaran.
+- Pencarian materi pembelajaran.
+- Filter berdasarkan CPMK dan status pembelajaran.
+- Pengurutan data berdasarkan minggu.
+- Pagination pada tabel RPS.
+- Visualisasi bobot penilaian.
+- Halaman detail setiap minggu pembelajaran.
+- Perubahan status pembelajaran.
+- Formulir pencatatan realisasi pembelajaran.
+- Penyimpanan data menggunakan LocalStorage.
+- Mode terang dan mode gelap.
+- Tampilan responsif untuk desktop dan perangkat mobile.
 
-Dalam pengembangan aplikasi Dashboard RPS, teknologi yang digunakan meliputi:
+## User Stories
+- Pengguna dapat melihat progres pembelajaran secara keseluruhan.
+- Pengguna dapat mencari dan memfilter data dengan mudah.
+- Pengguna dapat melihat detail pembelajaran setiap minggu.
+- Pengguna dapat memperbarui status pembelajaran.
+- Pengguna dapat mencatat realisasi kegiatan perkuliahan.
 
-- HTML5 (JSX) untuk menyusun struktur dan elemen halaman web.
-- CSS3 untuk mengatur desain, tata letak, responsivitas, serta tema aplikasi.
-- JavaScript untuk mendukung interaksi dan logika aplikasi.
-- TypeScript untuk memberikan tipe data pada kode.
-- React 19 untuk membangun komponen antarmuka yang dapat digunakan kembali.
-- Next.js 15 (App Router) sebagai framework aplikasi web.
-- LocalStorage untuk penyimpanan data lokal.
-- JSON sebagai sumber data simulasi (dummy data).
+## Alur Penggunaan
+- Pengguna membuka halaman Dashboard RPS.
+- Pengguna melihat ringkasan progres pembelajaran.
+- Pengguna mencari, memfilter, atau mengurutkan data.
+- Pengguna memilih minggu yang ingin dilihat detailnya.
+- Pengguna memperbarui status dan menambahkan catatan realisasi.
+- Data disimpan secara otomatis di LocalStorage.
+- Pengguna kembali ke dashboard untuk melihat perubahan yang telah dilakukan.
 
-## Aplikasi ini menyediakan beberapa fitur utama, yaitu:
+## Strategi Rendering Next.js
 
-Menampilkan dashboard berisi empat kartu KPI untuk memberikan gambaran umum progres pembelajaran.
-Fitur pencarian dan filter berdasarkan CPMK serta status pembelajaran.
-Pengurutan data dan pagination pada tabel RPS.
-Visualisasi bobot penilaian untuk membantu memahami komposisi evaluasi pembelajaran.
-Halaman detail yang menampilkan informasi setiap minggu perkuliahan.
-Pengubahan status pembelajaran sesuai perkembangan pelaksanaan perkuliahan.
-Formulir pencatatan realisasi pembelajaran dengan validasi secara langsung.
-Penyimpanan status dan catatan menggunakan LocalStorage.
-Dukungan mode terang dan mode gelap.
-Tampilan responsif yang dapat digunakan dengan nyaman pada laptop maupun perangkat mobile.
+Aplikasi menggunakan Next.js 15 dengan App Router.
 
-## Kebutuhan Pengguna (User Stories)
+- Halaman utama (Dashboard) menggunakan Server Component untuk mengambil data awal dari file JSON.
+- Komponen DashboardClient menggunakan Client Component untuk menangani pencarian, filter, pagination, tema, dan perubahan status.
+- Halaman detail menggunakan dynamic route (app/minggu/[id]/page.tsx).
+- Dashboard menerapkan Incremental Static Regeneration (ISR) dengan revalidate = 3600, sehingga data diperbarui setiap satu jam.
+- File loading.tsx dan error.tsx digunakan untuk menangani proses loading dan error.
 
-Aplikasi ini dirancang untuk memenuhi kebutuhan pengguna sebagai berikut:
+## Penyimpanan Data
 
-- Pengguna dapat melihat ringkasan progres pembelajaran sehingga perkembangan RPS dapat dipantau dengan mudah.
-- Pengguna dapat mencari dan memfilter data pembelajaran untuk menemukan materi yang dibutuhkan dengan lebih cepat.
-- Pengguna dapat melihat detail setiap minggu pembelajaran untuk memahami materi, metode, dan aktivitas perkuliahan.
-- Pengguna dapat memperbarui status pembelajaran serta menambahkan catatan realisasi sebagai dokumentasi pelaksanaan perkuliahan.
+Data disimpan menggunakan LocalStorage browser, meliputi:
+
+- Tema terang atau gelap.
+- Status pembelajaran setiap minggu.
+- Catatan realisasi pembelajaran.
+
+Aplikasi tidak menggunakan database eksternal.
 
 ## Cara Menjalankan Aplikasi
+Persyaratan
+Node.js
+npm
 
-Pastikan Node.js sudah terpasang pada perangkat yang digunakan.
+## Langkah Instalasi
 
-Buka terminal pada folder proyek, kemudian jalankan perintah berikut:
+Clone repository:
+
+ https://github.com/attriana2-oss/Dashboard-rps.git
+
+Masuk ke folder proyek:
+
+cd Dashboard-rps
+
+Instal dependensi:
+
 npm install
+
+Jalankan aplikasi:
+
 npm run dev
 
-Setelah proses selesai, buka browser dan akses:
+Buka browser dan akses:
+
 http://localhost:3000
 
-## Strategi Rendering
+Untuk membuat build produksi:
 
-Aplikasi ini dibangun menggunakan Next.js App Router. Halaman Dashboard dan halaman Detail menggunakan Client Component karena membutuhkan interaksi langsung dengan pengguna, seperti pencarian data, pengubahan status, dan pengisian catatan. Data awal RPS disimpan dalam file JSON lokal dan diambil menggunakan mekanisme fetch.
+npm run build
 
-## Penyimpanan Data Lokal
+## Hasil Pengujian
 
-Untuk menyimpan data yang berkaitan dengan pengguna, aplikasi memanfaatkan LocalStorage pada browser. Data yang disimpan meliputi preferensi tema, status pembelajaran, serta catatan realisasi. Penyimpanan ini bersifat lokal sehingga tidak menggunakan database atau server eksternal.
+Pengujian menunjukkan bahwa fitur-fitur berikut berjalan dengan baik:
+
+- Tampilan responsif pada desktop dan mobile.
+- Pencarian materi pembelajaran.
+- Filter berdasarkan CPMK dan status.
+- Pengurutan data dan pagination.
+- Perubahan status pembelajaran.
+- Validasi formulir realisasi pembelajaran.
+- Penyimpanan data setelah halaman dimuat ulang.
+- Penyimpanan preferensi tema.
+- Mode gelap pada halaman dashboard dan detail.
+- Build aplikasi Next.js berhasil tanpa error.
 
 ## Penggunaan AI
 
-Selama proses pengembangan, AI digunakan sebagai media pembelajaran dan pendukung pengembangan aplikasi. AI membantu dalam memahami konsep React, Next.js, dan TypeScript, memberikan referensi penyelesaian error, serta membantu mengevaluasi dan menyempurnakan fitur yang dibuat. Seluruh kode dan implementasi tetap ditinjau, disesuaikan, serta diuji secara mandiri oleh pengembang.
-
-## Hasil Pengujian Aplikasi
-- Tampilan responsif
-- Pencarian, filter, pengurutan, dan pagination
-- Validasi formulir realisasi
-- Penyimpanan status minggu
-- Penyimpanan catatan dan tema melalui Localstorage
-- Dark mode 
+AI digunakan sebagai alat bantu belajar dalam pengembangan aplikasi. AI membantu memahami konsep React, Next.js, dan TypeScript, serta membantu menganalisis error dan memberikan saran pengembangan. Seluruh hasil yang diberikan AI tetap diperiksa, disesuaikan, dan diuji kembali oleh pengembang sebelum digunakan.
