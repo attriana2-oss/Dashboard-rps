@@ -2,49 +2,49 @@
 [
   {
     "minggu": 1,
-    "topik": "Pengantar Perkuliahan",
+    "topik": "Pengantar Pengembangan Aplikasi Berbasis Web",
     "cpmk": "CPMK 1",
     "metode": "Ceramah",
     "status": "Selesai"
   },
   {
     "minggu": 2,
-    "topik": "Konsep Dasar",
+    "topik": "Dasar-Dasar HTML5 dan Struktur Halaman Web",
     "cpmk": "CPMK 1",
     "metode": "Diskusi",
     "status": "Selesai"
   },
   {
     "minggu": 3,
-    "topik": "Landasan Teori",
+    "topik": "Penerapan CSS untuk Desain Antarmuka",
     "cpmk": "CPMK 1",
     "metode": "Diskusi",
     "status": "Selesai"
   },
   {
     "minggu": 4,
-    "topik": "Analisis Materi",
+    "topik": "Responsive Web Design dengan CSS",
     "cpmk": "CPMK 2",
     "metode": "Studi Kasus",
     "status": "Selesai"
   },
   {
     "minggu": 5,
-    "topik": "Penerapan Konsep",
+    "topik": "Dasar-Dasar JavaScript",
     "cpmk": "CPMK 2",
     "metode": "Praktik",
     "status": "Selesai"
   },
   {
     "minggu": 6,
-    "topik": "Pengembangan Materi",
+    "topik": "Manipulasi DOM dan Event Handling",
     "cpmk": "CPMK 2",
     "metode": "Diskusi",
     "status": "Berjalan"
   },
   {
     "minggu": 7,
-    "topik": "Evaluasi Materi",
+    "topik": "Pengelolaan Data dengan JSON dan Local Storage",
     "cpmk": "CPMK 2",
     "metode": "Presentasi",
     "status": "Belum"
@@ -58,49 +58,49 @@
   },
   {
     "minggu": 9,
-    "topik": "Materi Lanjutan",
+    "topik": "Pengenalan React dan Konsep Component",
     "cpmk": "CPMK 3",
     "metode": "Ceramah",
     "status": "Belum"
   },
   {
     "minggu": 10,
-    "topik": "Implementasi",
+    "topik": "State, Props, dan Lifecycle pada React",
     "cpmk": "CPMK 3",
     "metode": "Praktik",
     "status": "Belum"
   },
   {
     "minggu": 11,
-    "topik": "Analisis Kasus",
+    "topik": "Penggunaan TypeScript pada Aplikasi Web",
     "cpmk": "CPMK 3",
     "metode": "Studi Kasus",
     "status": "Belum"
   },
   {
     "minggu": 12,
-    "topik": "Pengembangan Proyek",
+    "topik": "Pengembangan Aplikasi dengan Next.js",
     "cpmk": "CPMK 3",
     "metode": "Proyek",
     "status": "Belum"
   },
   {
     "minggu": 13,
-    "topik": "Presentasi Proyek",
+    "topik": "Routing dan Navigasi pada Next.js",
     "cpmk": "CPMK 4",
     "metode": "Presentasi",
     "status": "Belum"
   },
   {
     "minggu": 14,
-    "topik": "Evaluasi Proyek",
+    "topik": "Pengelolaan Form dan Validasi Data",
     "cpmk": "CPMK 4",
     "metode": "Diskusi",
     "status": "Belum"
   },
   {
     "minggu": 15,
-    "topik": "Review Materi",
+    "topik": "Deploy dan Optimasi Aplikasi Web",
     "cpmk": "CPMK 4",
     "metode": "Diskusi",
     "status": "Belum"
