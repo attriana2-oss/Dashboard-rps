@@ -63,3 +63,11 @@ Untuk menyimpan data yang berkaitan dengan pengguna, aplikasi memanfaatkan Local
 ## Penggunaan AI
 
 Selama proses pengembangan, AI digunakan sebagai media pembelajaran dan pendukung pengembangan aplikasi. AI membantu dalam memahami konsep React, Next.js, dan TypeScript, memberikan referensi penyelesaian error, serta membantu mengevaluasi dan menyempurnakan fitur yang dibuat. Seluruh kode dan implementasi tetap ditinjau, disesuaikan, serta diuji secara mandiri oleh pengembang.
+
+## Hasil Pengujian Aplikasi
+- Tampilan responsif
+- Pencarian, filter, pengurutan, dan pagination
+- Validasi formulir realisasi
+- Penyimpanan status minggu
+- Penyimpanan catatan dan tema melalui Localstorage
+- Dark mode 
